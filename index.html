@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="smooth-wrapper">
+        <div class="smooth-content">
+            <div id="page1">
+                <nav>
+                    <h1>Scroll Smoother</h1>
+                    <ul>
+                        <li><a href="#page1">Page 1</a></li>
+                        <li><a href="#page2">Page 2</a></li>
+                        <li><a href="#page3">Page 3</a></li>
+                    </ul>
+                </nav>
+                <h1 id="hero-title">Welcome
+                    <br>
+                    <span>to</span> <br>
+                    Scroll Smoother
+                </h1>
+            </div>
+            <div id="page2">
+                <h1>Experiences</h1>
+                <h1>Experiences</h1>
+                <h1>Experiences</h1>
+                <h1>Experiences</h1>
+            </div>
+            <div id="string">
+                <svg width="1000" height="160" id="line">
+                    <path d="M 10 100 Q 500 100 990 100" stroke="white" fill="transparent" />
+                </svg>
+            </div>
+            <div id="page3">
+                <div class="triangle-wrapper" id="triWrap1">
+                    <div class="triangle" id="triangle1"></div>
+                </div>
+                <div class="triangle-wrapper" id="triWrap2">
+                    <div class="triangle" id="triangle2"></div>
+                </div>
+                <div class="triangle-wrapper" id="triWrap3">
+                    <div class="triangle" id="triangle3"></div>
+                </div>
+                <h1>The End</h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollSmoother.min.js"
+        integrity="sha512-t4hwZimhnCKT3YLAsEcAcRDkngVFfCcUIfNLIjklrIZAZKD+GfQMP7HbRcsVHxNS48WRBSywNU1uSM2zzLQt1Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollToPlugin.min.js"></script>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

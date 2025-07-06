@@ -1,0 +1,290 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: sans-serif;
+     color: white;
+ }
+
+ html,
+ body {
+     height: 100%;
+     width: 100%;
+ }
+
+ body {
+     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+
+     scroll-behavior: smooth;
+     overflow-x: hidden;
+ }
+
+ .smooth-wrapper {
+     overflow: hidden;
+ }
+
+ .smooth-content {
+     will-change: transform;
+ }
+
+
+ nav {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 80px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 40px;
+
+ }
+
+ nav h1 {
+     color: transparent;
+     -webkit-text-stroke: 2px #03a9f4;
+     font-size: 2.8rem;
+     font-weight: 700;
+     text-transform: capitalize;
+     font-family: 'Courier New', Courier, monospace !important;
+     letter-spacing: 1px;
+ }
+
+ nav ul {
+     display: flex;
+     gap: 30px;
+     list-style: none;
+ }
+
+ nav ul li a {
+     text-decoration: none;
+     color: #eee;
+     font-size: 1.1rem;
+     font-weight: 500;
+     font-family: 'Courier New', Courier, monospace !important;
+     position: relative;
+ }
+
+ nav ul li a::after {
+     content: '';
+     position: absolute;
+     left: 0;
+     bottom: -5px;
+     height: 2px;
+     width: 0%;
+     background: #03a9f4;
+     transition: 0.3s;
+ }
+
+ nav ul li a:hover::after {
+     width: 100%;
+ }
+
+ nav ul li a:hover {
+     color: #03a9f4;
+ }
+
+ #page1 {
+     background: url(./Grid-PNG-Images-HD.webp);
+     background-repeat: repeat;
+     background-size: 5% 5%;
+     height: 100vh;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-top: 80px;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .hero-container {
+     text-align: center;
+     padding: 0 20px;
+ }
+
+ #hero-title {
+     font-size: 7rem;
+     text-align: left;
+     color: white;
+     font-weight: 700;
+     line-height: 1.2;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     animation: fadeInUp 1.2s ease-out;
+     background: linear-gradient(90deg, #03a9f4, #00f7ff);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+
+ #hero-title span {
+     font-size: 1.8em;
+     font-weight: 900;
+     color: transparent;
+     background: url(./chemistry-fire.gif) no-repeat center center / contain;
+     background-clip: text;
+     -webkit-background-clip: text;
+     letter-spacing: 5px;
+     display: inline-block;
+     text-shadow: 0 0 10px rgba(3, 169, 244, 0.7);
+ }
+ @media screen and (max-width: 1300px) {
+     #hero-title {
+         text-align: center;
+         font-size: 5rem;
+     }
+     #hero-title span {
+     font-size: 1em;}
+ }
+
+ #page2 {
+     background: url(./wallpaperflare.com_wallpaper.jpg);
+     background-size: cover;
+     background-position: center;
+     height: 100vh;
+     width: 100%;
+ }
+
+ #page2 h1 {
+     font-size: 30vw;
+     line-height: 100vh;
+     text-transform: uppercase;
+     color: transparent;
+     -webkit-text-stroke: 1px white;
+     font-weight: 600;
+     position: absolute;
+ }
+
+ #page2 h1:nth-child(1) {
+     color: transparent;
+     -webkit-text-stroke: 2px #03a9f4;
+
+ }
+
+ #page2 h1:nth-child(2) {
+     color: transparent;
+     animation: animate 6s ease-in-out infinite;
+     color: #03a9f4;
+ }
+
+ #page2 h1:nth-child(3) {
+     color: transparent;
+     animation: animate2 6s ease-in-out infinite;
+     color: #163bb4;
+ }
+
+ #page2 h1:nth-child(4) {
+     color: transparent;
+     animation: animate3 6s ease-in-out infinite;
+     color: #d37e2e;
+ }
+
+ #page3 {
+     background-color: rgb(0, 0, 0);
+     height: 100vh;
+     width: 100%;
+     position: relative;
+ }
+
+ #page3 h1 {
+     font-size: 5rem;
+     color: white;
+     font-weight: 700;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     position: absolute;
+     bottom: 100px;
+     text-align: center;
+     width: 100%;
+ }
+
+ #string {
+     background-color: rgb(0, 0, 0);
+     height: 50vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-top: 10vh;
+ }
+
+ #string svg {
+     height: 50vh;
+ }
+
+ @keyframes animate {
+
+     0%,
+     100% {
+         clip-path: polygon(0 42%, 13% 48%, 26% 55%, 41% 64%, 56% 65%, 69% 58%, 84% 45%, 100% 38%, 100% 100%, 0% 100%);
+     }
+
+     50% {
+         clip-path: polygon(0 63%, 14% 57%, 25% 50%, 40% 42%, 56% 40%, 71% 44%, 84% 50%, 100% 60%, 100% 100%, 0% 100%);
+     }
+ }
+
+ @keyframes animate2 {
+
+     0%,
+     100% {
+         clip-path: polygon(0 63%, 14% 57%, 25% 50%, 40% 42%, 56% 40%, 71% 44%, 84% 50%, 100% 60%, 100% 100%, 0% 100%);
+     }
+
+     50% {
+         clip-path: polygon(0 42%, 13% 48%, 26% 55%, 41% 64%, 56% 65%, 69% 58%, 84% 45%, 100% 38%, 100% 100%, 0% 100%);
+     }
+ }
+
+ @keyframes animate3 {
+
+     0%,
+     100% {
+         clip-path: polygon(0 50%, 10% 58%, 22% 52%, 35% 60%, 48% 49%, 62% 64%, 75% 48%, 88% 55%, 100% 50%, 100% 100%, 0% 100%);
+     }
+
+     50% {
+         clip-path: polygon(0 65%, 10% 54%, 22% 60%, 35% 45%, 48% 62%, 62% 40%, 75% 59%, 88% 43%, 100% 68%, 100% 100%, 0% 100%);
+     }
+ }
+
+
+ .triangle-wrapper {
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ .triangle {
+     width: 0;
+     height: 0;
+     position: absolute;
+ }
+ /* Triangle pointing UP */
+ #triangle1 {
+     border-left: 100px solid transparent;
+     border-right: 100px solid transparent;
+     border-bottom: 174px solid #03a9f4;
+     z-index: 3;
+     filter: drop-shadow(0px 0px 15px #03a9f4);
+ }
+
+ /* Triangle pointing RIGHT */
+ #triangle2 {
+     border-top: 100px solid transparent;
+     border-bottom: 100px solid transparent;
+     border-left: 174px solid #163bb4;
+     z-index: 2;
+     filter: drop-shadow(0px 0px 15px #163bb4);
+ }
+
+ /* Triangle pointing DOWN */
+ #triangle3 {
+     border-left: 100px solid transparent;
+     border-right: 100px solid transparent;
+     border-top: 174px solid #d37e2e;
+     z-index: 1;
+     filter: drop-shadow(0px 0px 15px #d37e2e);
+ }
+
